@@ -1,5 +1,5 @@
 from django import forms
-from todo_project.todo.models import Task,
+from .models import Task
 
 class RegistForm(forms.ModelForm):
     title = forms.CharField(label='タスク名')
