@@ -31,3 +31,10 @@ class TaskListView(ListView): #task一覧を表示するページ
 
         return query
 
+class TaskDetailView(DetailView):
+    model = Task
+    template_name = 'task_detail.html'
+
+    def get_context_data(self, **kwargs):
+        return super().get_context_data(**kwargs)
+
